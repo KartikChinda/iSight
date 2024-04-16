@@ -1,0 +1,86 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: futura;
+    src: url(../../Futura-Bold.ttf);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: futura;
+}
+
+*::selection {
+    background-color: #fff;
+    color: #000;
+}
+
+#nav {
+    height: 80px;
+    width: 100%;
+    color: #aca5a5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    /* position: fixed;
+    z-index: 9999; */
+    background-color: #ffb6b9bd;
+}
+
+#nav img {
+    height: 120px;
+    width: 120px;
+}
+
+#nav #heading {
+    font-size: 4.3vw;
+    font-weight: 900;
+    margin-left: 100px;
+    color: #343333;
+    ;
+}
+
+#nav #others {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+#nav #others a {
+    text-decoration: none;
+    color: #343333a9;
+}
+
+#nav #others button {
+    font-size: 17px;
+    background-color: #d39292;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 30px;
+
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+.text {
+    font-family: Arial, sans-serif;
+    line-height: 2;
+}

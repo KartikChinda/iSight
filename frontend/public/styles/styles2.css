@@ -1,0 +1,276 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: futura;
+    src: url(../../Futura-Bold.ttf);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: futura;
+}
+
+*::selection {
+    background-color: #fff;
+    color: #000;
+}
+
+#minicircle {
+    width: 13px;
+    position: absolute;
+    z-index: 999;
+    border-radius: 50%;
+    height: 17px;
+    background-color: #f0a3a39c;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+body {
+    background-color: #FAE3D9;
+    font-family: futura;
+}
+
+button {
+    background-color: #61C0BF;
+    padding: 10px 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+#page1 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#nav {
+    height: 80px;
+    width: 100%;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    position: fixed;
+    background-color: #FFB6B9;
+}
+
+#nav img {
+    height: 120px;
+    width: 120px;
+}
+
+#nav #heading {
+    font-size: 4.3vw;
+    font-weight: 900;
+    color: #343333;
+}
+
+#nav #others {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#nav #others a {
+    text-decoration: none;
+    color: #343333a9;
+}
+
+#nav #others button {
+    font-size: 17px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid rgba(70, 70, 70, 0.233)d7d;
+}
+
+#center {
+    height: 100%;
+    position: relative;
+    background-color: #28282823;
+}
+
+#box {
+    height: 70%;
+    width: 40%;
+    background-color: #BBDED6;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 170px;
+    line-height: 4.5vw;
+}
+
+#box h1 {
+    color: #000000de;
+    font-size: 3.5vw;
+}
+
+#box h2 {
+    color: #424040c8;
+    font-size: 2vw;
+    padding-left: 25px;
+}
+
+#box span {
+    margin-left: 150px;
+    font-size: 5vw;
+    color: #424040ad;
+}
+
+#box #formid button {
+    padding: 60px 60px;
+    font-size: 2vw;
+}
+
+#paybtn {
+    font-size: 3vw;
+    font-weight: 700;
+    padding: 110px 80px;
+    color: #0000009d;
+    transition: all ease 0.5s;
+    border-bottom-left-radius: 110px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+}
+
+#info {
+    height: 200px;
+    width: 200px;
+    background-color: #FAE3D9;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 50px;
+    padding-right: 10px;
+    gap: 15px;
+}
+
+#info h3 {
+    font-size: 1.5vw;
+    color: #7d7c7c;
+    line-height: 1.7vw;
+}
+
+#info h2 {
+    font-size: 2vw;
+    color: #2a29298f;
+    font-weight: 800;
+    margin-left: -20px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px rgba(112, 111, 111, 0.299);
+}
+
+#info h2 i {
+    text-shadow: none;
+    color: #2a2929b2;
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+
+#paybtn:hover {
+    background-color: #BBDED6;
+    color: #0000009c;
+}
+
+#imgdiv {
+    position: absolute;
+    right: 2%;
+    top: 36%;
+}
+
+#imgdiv p {
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #0000009c;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    #nav {
+        padding: 10px;
+    }
+
+    #nav #heading {
+        font-size: 6vw;
+        margin-left: 20px;
+    }
+
+    #nav #others button {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+
+    #box {
+        width: 80%;
+    }
+
+    #box h1 {
+        font-size: 8vw;
+    }
+
+    #box h2 {
+        font-size: 4vw;
+    }
+
+    #box span {
+        margin-left: 50px;
+        font-size: 8vw;
+    }
+
+    #box #formid button {
+        font-size: 4vw;
+        padding: 20px 30px;
+    }
+
+    #paybtn {
+        font-size: 6vw;
+        padding: 40px 30px;
+    }
+
+    #info {
+        width: 80%;
+        left: 10%;
+        top: 20%;
+    }
+
+    #info h3 {
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+
+    #info h2 {
+        font-size: 6vw;
+    }
+
+    #info h2 i {
+        font-size: 5vw;
+    }
+
+    #imgdiv p {
+        font-size: 4vw;
+    }
+}
